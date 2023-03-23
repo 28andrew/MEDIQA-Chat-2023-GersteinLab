@@ -7,16 +7,16 @@
 - `RoBERTa-base-PM-M3-Voc-distill-align-hf`: From [bio-lm](https://github.com/facebookresearch/bio-lm)
 
 Task A - Run 1:
-- Classification: RoBERTa with classification head
-- Summaries: Trained CONFIT (version 1)
+- Classification: RoBERTa with classification head (`best-84.11` / `final-roberta-classifier`)
+- Summaries: Trained BART via CONFIT (`checkpoint-7776`)
 
 Task A - Run 2:
 - Classification: Fine-tuned OpenAI davinci
-- Summaries: Trained CONFIT (version 1)
+- Summaries: Trained BART via CONFIT (`checkpoint-7776`)
 
 Task A - Run 3:
-- Classification: RoBERTa with classification head
-- Summaries: Trained CONFIT (version 2) with dynamic max length
+- Classification: RoBERTa with classification head (`best-84.11` / `final-roberta-classifier`)
+- Summaries: Trained BART via CONFIT (`checkpoint-600`) with dynamic max length
 
 Task B - Run 1:
 - Fine-tuned OpenAI davinci
