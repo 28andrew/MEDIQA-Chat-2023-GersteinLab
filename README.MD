@@ -26,7 +26,4 @@ Task B - Run 1:
 - Fine-tuned OpenAI davinci (temperature = 0.2)
 
 Task B - Run 2:
-- Fine-tuned OpenAI davinci (temperature = 0.5)
-
-Task B - Run 3:
-- Fine-tuned OpenAI davinci (temperature = 0.8)
+- Fine-tuned OpenAI davinci (temperature = 0.0)
