@@ -2,7 +2,7 @@ import pickle
 import sys
 import csv
 import openai
-openai.api_key = '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'
+openai.api_key = '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'
 from nltk.tokenize import word_tokenize
 
 dialog_dict = {}
@@ -29,7 +29,7 @@ def predict_note(dialog_str):
     dialog_str = shorten_dialog(dialog_str, 1200)
     try:
         response = openai.Completion.create(
-            model='davinci:ft-personal-2023-03-23-04-14-43',
+            model='davinci:ft-personal-2023-03-23-05-58-11',
             prompt=dialog_str + '\n\n###\n\n',
             max_tokens=800,
             temperature=0.8,
@@ -38,7 +38,7 @@ def predict_note(dialog_str):
     except:
         try:
             response = openai.Completion.create(
-                model='davinci:ft-personal-2023-03-23-04-14-43',
+                model='davinci:ft-personal-2023-03-23-05-58-11',
                 prompt=dialog_str + '\n\n###\n\n',
                 max_tokens=600,
                 temperature=0.8,
@@ -63,7 +63,7 @@ try:
 except:
     pass
 
-with open('taskB_gersteinlab_run1.csv', 'w') as file:
+with open('taskB_gersteinlab_run3.csv', 'w') as file:
     writer = csv.writer(file)
     writer.writerow(['TestID', 'SystemOutput'])
     for ID, dialog in dialog_dict.items():
