@@ -32,7 +32,7 @@ def predict_note(dialog_str):
             model='davinci:ft-personal-2023-03-23-04-14-43',
             prompt=dialog_str + '\n\n###\n\n',
             max_tokens=800,
-            temperature=0.2,
+            temperature=0.5,
             stop=["ENDNOTE"]
         )
     except:
@@ -41,6 +41,7 @@ def predict_note(dialog_str):
                 model='davinci:ft-personal-2023-03-23-04-14-43',
                 prompt=dialog_str + '\n\n###\n\n',
                 max_tokens=600,
+                temperature=0.5,
                 stop=["ENDNOTE"]
             )
         except:
