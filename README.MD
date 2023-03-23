@@ -23,4 +23,10 @@ Task A - Run 3:
 - Summaries: Trained BART via CONFIT (`checkpoint-600`) with dynamic max length
 
 Task B - Run 1:
-- Fine-tuned OpenAI davinci
+- Fine-tuned OpenAI davinci (temperature = 0.2)
+
+Task B - Run 2:
+- Fine-tuned OpenAI davinci (temperature = 0.5)
+
+Task B - Run 3:
+- Fine-tuned OpenAI davinci (temperature = 0.8)
