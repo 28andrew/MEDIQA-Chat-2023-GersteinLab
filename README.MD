@@ -8,6 +8,8 @@
 - `checkpoint-7776`: Best BART checkpoint trained via [CONFIT](https://github.com/XiangruTang/CONFIT)
 - `RoBERTa-base-PM-M3-Voc-distill-align-hf`: From [bio-lm](https://github.com/facebookresearch/bio-lm)
 
+# Run descriptions
+
 Task A - Run 1:
 - Classification: RoBERTa with classification head (`best-84.11` / `final-roberta-classifier`)
 - Summaries: Trained BART via CONFIT (`checkpoint-7776`)
